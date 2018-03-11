@@ -1,0 +1,1 @@
+export INIT_JOKES = 'INIT_JOKES'
