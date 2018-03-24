@@ -1,6 +1,18 @@
 <template>
 <div id="app">
-	got jokes?
-	{{$store.state}}
+	<h3>Got Jokes</h3>
+	<button class="btn btn-primary" @click="initJokes">Add Ten Jokes</button>
+	<div class="">
+			{{$store.state}}
+	</div>
 </div>
 </template>
+
+<script>
+import {mapActions} from 'vuex'
+export default {
+	methods: mapActions([
+		'initJokes'
+	])
+}
+</script>
